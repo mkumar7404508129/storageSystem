@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Get Request:</h1>
+        <form action="/getRoll" method="GET">
+            <label for="roll">Get data by roll No:</label>
+            <input type="number"  name="Roll" id='roll'placeholder="Enter Roll No:">
+            <input type="submit" name="Submit">
+        </form>
+        <hr>
+            <h1> Data from Get Request</h1>
+            <h1><%= data %></h1>
+          
+    </div>
+    <div>
+        <h1>Post Request</h1>
+        <form action="/post" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" name="Name" id="name" placeholder="Enter Name">
+            <label for="roll">Roll:</label>
+            <input type="number" name="Roll" id="roll" placeholder="Enter Roll no">
+            <input type="submit" name="Submit" id="submit">
+        </form>
+        <hr>
+        <h1>Response From Post</h1>
+        <%= post %>
+    </div>
+    <h1></h1>
+    <h1><% data %></h1>
+</body>
+</html>
